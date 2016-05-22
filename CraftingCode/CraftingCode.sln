@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payment", "Payment\Payment.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountService", "AccountService\AccountService.csproj", "{010C80C3-C2F3-4E4E-A4D8-9DE8483C93F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumeralConverter", "RomanNumeralConverter\RomanNumeralConverter.csproj", "{2E099CE0-620D-4156-8378-AA69D423D616}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestDrivingAlgorithms", "TestDrivingAlgorithms\TestDrivingAlgorithms.csproj", "{2E099CE0-620D-4156-8378-AA69D423D616}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
