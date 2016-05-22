@@ -1,35 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Moq;
-
-namespace AccountService
+﻿namespace AccountService
 {
-	public class AccountService
+   public class AccountService
 	{
-		private IConsole _console;
-		private List<string> log = new List<string>();
-		private IDateController _dateController;
+      private TransactionRepository transactionRepository;
 
-		public AccountService(IConsole _console, IDateController _dateController)
+      public AccountService(TransactionRepository transactionRepository)
+      {
+         this.transactionRepository = transactionRepository;
+      }
+
+      public void Deposit(int amount)
 		{
-			this._console = _console;
-			this._dateController = _dateController;
+         transactionRepository.AddDepisit(amount);
 		}
 
-		public void deposit(int amount)
+		public void Withdraw(int amount)
 		{
-
+         transactionRepository.AddWidrowal(amount);
 		}
 
-		public void withdraw(int amount)
-		{
-
-		}
-
-		public void printStatement()
+		public void PrintStatement()
 		{
 
 		}

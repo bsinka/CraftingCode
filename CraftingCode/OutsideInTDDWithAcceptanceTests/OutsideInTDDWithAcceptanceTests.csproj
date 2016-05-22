@@ -68,13 +68,10 @@
   <ItemGroup>
     <Compile Include="AccountService.cs" />
     <Compile Include="AccountServiceShould.cs" />
-    <Compile Include="Console.cs" />
-    <Compile Include="DateController.cs" />
-    <Compile Include="IConsole.cs" />
-    <Compile Include="IDateController.cs" />
     <Compile Include="PrintStatementFeature.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TransactionRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

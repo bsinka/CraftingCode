@@ -1,40 +1,33 @@
 ﻿using Moq;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 namespace AccountService
 {
-	public class AccountServiceShould
+   public class AccountServiceShould
 	{
-		private AccountService _accountService;
-		private Mock<IConsole> _console;
-		private Mock<IDateController> _dateController;
+      private Mock<TransactionRepository> transactionRepository;
+      private AccountService accountService;
 
 		public AccountServiceShould()
 		{
-			_console = new Mock<IConsole>();
-			_console.Setup(c => c.Content).Returns("DATE | AMOUNT | BALANCE" + Environment.NewLine);
-			_accountService = new AccountService(_console.Object, _dateController.Object);
+         transactionRepository = new Mock<TransactionRepository>();
+         accountService = new AccountService(transactionRepository.Object);
 		}
 
 		[Fact]
-		public void PrintStatementOnEmptyAccount()
+		public void StoreDepositTransaction()
 		{
-			_accountService.printStatement();
-			Assert.Equal(_console.Object.Content, "DATE | AMOUNT | BALANCE" + Environment.NewLine);
+         int amount = 100;
+         accountService.Deposit(amount);
+			transactionRepository.Verify(t => t.AddDepisit(amount), Times.Once);
 		}
 
-		//[Fact]
-		public void AddDeposit()
+		[Fact]
+		public void StoreWidrowalTransaction()
 		{
-			_console.Setup(c => c.Content).Returns("DATE | AMOUNT | BALANCE" + Environment.NewLine);
-			_accountService.deposit(100);
-			_accountService.printStatement();
-			//Assert.
-		}
+         int amount = 100;
+         accountService.Withdraw(amount);
+         transactionRepository.Verify(t => t.AddWidrowal(amount), Times.Once);
+      }
 	}
 }
