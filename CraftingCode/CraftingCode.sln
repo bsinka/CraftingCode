@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{F281DA25-A9BB-492E-A76D-F89608875A84}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payment", "Payment\Payment.csproj", "{501C89C4-4B2F-4922-B3BF-3CD7A8A2BDCD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountService", "AccountService\AccountService.csproj", "{010C80C3-C2F3-4E4E-A4D8-9DE8483C93F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumeralConverter", "RomanNumeralConverter\RomanNumeralConverter.csproj", "{2E099CE0-620D-4156-8378-AA69D423D616}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F281DA25-A9BB-492E-A76D-F89608875A84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F281DA25-A9BB-492E-A76D-F89608875A84}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F281DA25-A9BB-492E-A76D-F89608875A84}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F281DA25-A9BB-492E-A76D-F89608875A84}.Release|Any CPU.Build.0 = Release|Any CPU
 		{501C89C4-4B2F-4922-B3BF-3CD7A8A2BDCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{501C89C4-4B2F-4922-B3BF-3CD7A8A2BDCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{501C89C4-4B2F-4922-B3BF-3CD7A8A2BDCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,6 +23,10 @@ Global
 		{010C80C3-C2F3-4E4E-A4D8-9DE8483C93F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{010C80C3-C2F3-4E4E-A4D8-9DE8483C93F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{010C80C3-C2F3-4E4E-A4D8-9DE8483C93F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E099CE0-620D-4156-8378-AA69D423D616}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E099CE0-620D-4156-8378-AA69D423D616}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E099CE0-620D-4156-8378-AA69D423D616}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E099CE0-620D-4156-8378-AA69D423D616}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
